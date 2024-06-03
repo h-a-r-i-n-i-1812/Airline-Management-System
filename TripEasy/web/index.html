@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+ /* styles.css */
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    padding: 20px;
+    text-align: center; /* Center the content horizontally */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Header styles */
+.flight-image {
+    text-align: center;
+    margin-top: 50px;
+    margin-left:380px;
+  /* Adjust as needed */
+}
+
+.flight-image img {
+    max-width:70%;
+    text-align: center;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    border: 10px solid #fff; /* Adjust border width and color */
+    box-shadow: 0 5px 20px rgba(0, 0.1, 0.5, 0.2); 
+    animation: floatAnimation 5s ease-in-out infinite alternate;
+    /* Add shadow for depth */
+}
+
+/* Image slider styles */
+.image-slider {
+    display: flex;
+    justify-content: center; /* Center the slides horizontally */
+    overflow: hidden; /* Hide overflow to hide extra slides */
+    margin: 50px auto;
+    width: 70%; /* Adjust as needed */
+}
+
+.slide {
+    flex: 1;
+    margin-right: 20px; /* Adjust spacing between slides */
+    animation: slide 5s infinite; /* Adjust animation duration as needed */
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+    
+}
+</style>
+        
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+          
+            
+            <li><a href="checkAvailability.html">Book Tickets</a></li>
+            <li><a href="login.html">Login/SignUp</a></li>
+              <li><a href="cancel.html">Cancel Tickets</a></li>
+        </ul>
+    </nav>
+     <p style="color:red;font-family:Mistral;font-size:40px;box-shadow: 0 2px 5px burlywood ;text-align:center">Trip Easy✈️</p>
+    
+     <div class='elements'>
+     
+    <div class="image-slider">
+        <div class="slide">
+            <img src="flight-image.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+            <img src="flight-image.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+            <img src="flight-image.jpg" alt="Image 3">
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+</div>
+    <script src="scripts.js"></script>
+</body>
+</html>

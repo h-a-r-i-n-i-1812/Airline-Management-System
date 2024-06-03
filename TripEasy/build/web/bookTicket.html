@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Input Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 50%;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: border 0.3s ease;
+    }
+
+    .container:hover {
+        border: 2px solid #007bff;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: border 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="number"]:focus {
+        border: 1px solid #007bff;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Book Tickets</h2>
+    <form action="PassengerBookTicket">
+        <input type="text" name="name" placeholder="Enter your name">
+        <input type="text" name="email" placeholder="Enter your email id">
+         <input type="text" name="phone" placeholder="Enter phone number">
+          <input type="number" name="ticket" placeholder="Number of tickets">
+          <label >Destination:</label>
+        <select  name="src">
+            <option value="madurai">Madurai</option>
+            <option value="chennai">Chennai</option>
+         
+            <!-- Add more options as needed -->
+        </select><br><br>
+              <label >Source:</label>
+          <select  name="dest">
+            <option value="chennai">Chennai</option>
+            <option value="delhi">delhi</option>
+         
+            <!-- Add more options as needed -->
+        </select><br><br>
+       Date: <input type="date" name="date">
+          <        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>

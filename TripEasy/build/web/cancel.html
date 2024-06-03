@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-header {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="email"],
+        .login-form input[type="number"],
+        .login-form input[type="date"],
+        .login-form input[type="time"],
+        .login-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            border: none;
+            color: white;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+
+        .login-form .error-message {
+            color: #ff0000;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2 class="login-header">Cancel Ticket</h2>
+        <form class="login-form" action="CancelTicket" method="post">
+            <input type="text" name="name" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="number" name="ticket" placeholder="Ticket" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="source">Source:</label>
+            <select id="source" name="source" required>
+                <option value="madurai">Madurai</option>
+                <option value="chennai">Chennai</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="destination">Destination:</label>
+            <select id="destination" name="dest" required>
+                <option value="chennai">Chennai</option>
+                <option value="delhi">Delhi</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="clas">Class:</label>
+            <select id="clas" name="clas" required>
+                <option value="economy">Economy</option>
+                <option value="business">Business</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="time">Departure Time:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <input type="submit" value="Cancel Tickets">
+        </form>
+    </div>
+</body>
+</html>
